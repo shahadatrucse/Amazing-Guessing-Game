@@ -1,8 +1,10 @@
 const totalAttempts = 5;
-const attempts = 0;
-const totalLosts = 0;
-const totalWons = 0;
-// finding elements
+let attempts = 0;
+let totalLosts = 0;
+let totalWons = 0;
+
+
+//finding elements
 const form = document.querySelector("form");
 const cardBody = document.querySelector(".card-body");
 const guessingNumber = form.querySelector("#guessingNumber");
@@ -44,4 +46,3 @@ function checkResult(guessingNumber){
 function getRandomNumber (limit){
     return Math.floor(Math.random() * limit) + 1;
 }
-
